@@ -8,19 +8,17 @@ programa
 		real b
 
 		
-		escreva("Digite um número: ")
-
+		escreva("Digite um número: ")		
 		leia(a)
 
 		escreva("Digite outro número: ")
-
 		leia(b) 
 
-		escreva("A soma dos numeros é: ",a+b)
+		escreva("A soma dos numeros é: ",a+b,"\n")
 
-		escreva("A subtração dos numeros é: ",a-b)
+		escreva("A subtração dos numeros é: ",a-b,"\n")
 
-		escreva("A multiplicação dos numeros é: ",a*b)
+		escreva("A multiplicação dos numeros é: ",a*b,"\n")
 
 		escreva("A divisão dos numeros é: ",a/b)
 
@@ -40,8 +38,10 @@ programa
 
 		escreva("Digite quantos dolares")
 		leia(dolar)
+
 		escreva("Digite a cotação")
 		leia(cotacao)
+        
 		escreva("Valor em reais: ", (dolar*cotacao))
 
 	}
