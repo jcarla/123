@@ -1,0 +1,32 @@
+pessoa
+
+CREATE TABLE pessoa_jucarla (
+		pessoa_id INT NOT NULL AUTO_INCREMENT,
+		nome VARCHAR(200),
+		cpf VARCHAR(25),
+		idade Date,
+		sexo Char(1),
+		PRIMARY KEY(pessoa_id)
+	);
+
+endereço
+
+CREATE TABLE endereço_jucarla (
+  identificador int(11) NOT NULL AUTO_INCREMENT,
+  tipo VARCHAR(10) NOT NULL,
+  logradouro VARCHAR (250) NOT NULL,
+  num int(10) NOT NULL,
+  complemento varchar(100) DEFAULT NULL,
+  cep Numeric NOT NULL,
+  bairro varchar(100) NOT NULL,
+  cidade varchar(250) NOT NULL,
+  estado varchar(2) NOT NULL,
+  Pesssoa_identificador int(11) DEFAULT NULL,
+  PRIMARY KEY (identificador),
+  FOREIGN KEY (pessoa_id)
+
+
+select *
+from pessoa_jucarla 
+inner join endereço_jucarla ej on pessoa_id = identificador;
+
