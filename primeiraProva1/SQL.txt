@@ -24,6 +24,7 @@ CREATE TABLE endereço_jucarla (
   Pesssoa_identificador int(11) DEFAULT NULL,
   PRIMARY KEY (identificador),
   FOREIGN KEY (pessoa_id)
+);
 
 
 select *
