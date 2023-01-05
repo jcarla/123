@@ -26,8 +26,10 @@ CREATE TABLE endereço_jucarla (
   FOREIGN KEY (pessoa_id)
 );
 
+select * from pessoa_jucarla  
+select * from endereço_jucarla 
 
 select *
 from pessoa_jucarla 
-inner join endereço_jucarla ej on pessoa_id = identificador;
+inner join endereço_jucarla ej on pessoa_id;
 
